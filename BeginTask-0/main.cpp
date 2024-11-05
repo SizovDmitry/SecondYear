@@ -1,10 +1,10 @@
-#include "ArrayHandler.hpp"
+#include <gtest/gtest.h>
+#include <gmock/gmock.h>
+#include "ArrayHandler.h"
 
-int main(){
-    ArrayHandler <double> massive;
-    for (int i = 1; i <= 5; i++) {
-        massive.AppendElem(i);
-    }
-    cout << massive.GetMax() << endl;
-    cout << massive.GetMin() << endl;
-};
+
+int main(int argc, char** argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+
+    return RUN_ALL_TESTS();
+}
