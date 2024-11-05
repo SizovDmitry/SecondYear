@@ -1,73 +1,62 @@
+#pragma once
 #include <iostream>
+#include <limits>
 
 using namespace std;
 
 template <typename T>
+class ArrayHandler {
+private:
+    size_t capacity; 
+    size_t count;
+    T* arr;
+    T max;
+    T min;
 
-class ArrayHandler
-{
+    void resize() {
+        capacity *= 2; 
+        T* newArr = new T[capacity];
+        for (size_t i = 0; i < count; i++) {
+            newArr[i] = arr[i];
+        }
+        delete[] arr;
+        arr = newArr;
+    }
 
-    private:
-        size_t size;
-        size_t _size;
-        T* arr;
+public:
+    ArrayHandler() {
+        capacity = 1; 
+        count = 0;
+        max = std::numeric_limits<T>::min();
+        min = std::numeric_limits<T>::max();
+        arr = new T[capacity];
+    }
 
+    void AppendElem(T elem) {
+        if (count >= capacity) {
+            resize(); 
+        }
+        arr[count] = elem;
+        count++;
 
-    public:
+        if (min > elem) {
+            min = elem;
+        }
 
-        ArrayHandler() {
-            size = 0;
-            _size = 0;
-            arr = new T[_size];
-        };
+        if (max < elem) {
+            max = elem;
+        }
+    }
 
-        void AppendElem(T elem) {
-            if (size == _size) {
-                if (_size == 0) {
-                    _size = 1;
-                } else {
-                    _size = _size * 2;
-                }
-                T* new_arr = new T[_size];
-                for (size_t i = 0; i < size; i++) {
-                    new_arr[i] = arr[i];
-                };
-                delete []arr;
-                arr = new_arr;
-            };
+    T GetMax() {
+        return max;
+    }
 
-            arr[size] = elem;
-            size++;                
-        };
-        
-        T GetMax() {
-            T max = arr[0];
-            for (size_t i = 0; i < size; i++) {
-                if (max < arr[i])
-                    max = arr[i];
-            };
-            return max;
-        };
+    T GetMin() {
+        return min;
+    }
 
-        T GetMin() {
-            T min = arr[0];
-            for (size_t i = 0; i < size; i++) {
-                if (arr[i] < min)
-                    min = arr[i];
-            };
-            return min;
-        };
-
-        int FindElem(T elem) {
-            for (size_t i = 0; i < size; i++) {
-                if (arr[i] == elem)
-                    return i;
-            };
-            return -1;
-        };
-
-        ~ArrayHandler(){
-            delete []arr;
-        };
-        
+    ~ArrayHandler() {
+        delete[] arr;
+    }
 };
