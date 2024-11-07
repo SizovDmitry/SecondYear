@@ -10,7 +10,7 @@ Set::Set(const BitField& bf) : _maxPower(bf.GetLength()), _bitField(bf) {
 
 }
 
-//Set::operator  BitField ()    {  BitField temp(this->_bitField); return temp; }
+//Set::operator  BitField ()        {  BitField temp(this->_bitField); return temp; }
 
 size_t Set::GetMaxPower() const {
     return _maxPower;
@@ -40,12 +40,10 @@ Set& Set::operator=(const Set& s) {
 }
 Set Set::operator+ (const uint64_t Elem) {
     Set res(*this); res.InsElem(Elem); return res;
-    //return *this;
 }
 
 Set Set::operator- (const uint64_t Elem) {
     Set res(*this); res.DelElem(Elem); return res;
-    //return *this;
 }
 
 Set Set::operator+ (const Set& s) {
