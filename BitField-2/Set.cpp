@@ -58,7 +58,6 @@ Set Set::operator* (const Set& s) {
 Set Set::operator~ () {
     Set res((~_bitField));
     return res;
-    //return *this;
 }
 
 istream& operator>>(istream& is, Set& tmp) {
