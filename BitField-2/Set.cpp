@@ -10,7 +10,7 @@ Set::Set(const BitField& bf) : _maxPower(bf.GetLength()), _bitField(bf) {
 
 }
 
-//Set::operator  BitField ()     {  BitField temp(this->_bitField); return temp; }
+//Set::operator  BitField ()    {  BitField temp(this->_bitField); return temp; }
 
 size_t Set::GetMaxPower() const {
     return _maxPower;
