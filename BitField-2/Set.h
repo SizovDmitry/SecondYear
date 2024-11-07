@@ -4,7 +4,7 @@
 class Set
 {
 private:
-  size_t _maxPower;       // максимальная мощность множества
+  size_t _maxPower;       // максимальная мощность множества qwerty
   BitField _bitField; // битовое поле для хранения характеристического вектора
 public:
   Set(size_t mp);
