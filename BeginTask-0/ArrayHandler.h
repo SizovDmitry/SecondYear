@@ -11,7 +11,7 @@ private:
     T _min;
     size_t _count;
 public:
-    ArrayHandler(size_t size = 10) { //123
+    ArrayHandler(size_t size = 10) { //1234
         _size = size;
         _array = new T[_size];
         _max = std::numeric_limits<T>::min();
