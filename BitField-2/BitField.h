@@ -1,6 +1,13 @@
 #pragma once
 #include <iostream>
 #include <stdint.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <stdio.h>
+#include <tchar.h>
+#include <ctime>
+
+using namespace std;
 
 class BitField {
 private:
@@ -26,6 +33,9 @@ public:
     BitField operator^(const BitField& tmp);
     bool operator==(const BitField& tmp) const;
     BitField operator~();
+
+    friend istream&  operator>>  (istream &istr, BitField &bf);
+	friend ostream&  operator<<  (ostream &ostr, const BitField &bf); 
 
     ~BitField(){
 

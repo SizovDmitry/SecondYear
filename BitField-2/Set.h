@@ -30,5 +30,9 @@ public:
   Set operator+ (const Set &s);  // объединение
   Set operator* (const Set &s);  // пересечение
   Set operator~ ();           // дополнение
-  std::vector<uint64_t> GetPrimary(); // Выдать простые числа множества
+  
+	friend istream &operator>>(istream &istr, Set &bf);
+	friend ostream &operator<<(ostream &ostr, const Set &bf);
+
+  vector<uint64_t> GetPrimary() const; // Выдать простые числа множества
 };
