@@ -1,10 +1,11 @@
 #pragma once
+#include <vector>
 #include "BitField.h"
 
 class Set
 {
 private:
-  size_t _maxPower;       // максимальная мощность множества qwerty
+  size_t _maxPower;       // максимальная мощность множества
   BitField _bitField; // битовое поле для хранения характеристического вектора
 public:
   Set(size_t mp);
@@ -29,9 +30,5 @@ public:
   Set operator+ (const Set &s);  // объединение
   Set operator* (const Set &s);  // пересечение
   Set operator~ ();           // дополнение
-  
-	friend istream &operator>>(istream &istr, Set &bf);
-	friend ostream &operator<<(ostream &ostr, const Set &bf);
-
-  vector<uint64_t> GetPrimary() const; // Выдать простые числа множества
+  std::vector<uint64_t> GetPrimary(); // Выдать простые числа множества
 };
