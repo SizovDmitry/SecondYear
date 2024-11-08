@@ -1,18 +1,7 @@
 #pragma once
 #include <iostream>
 #include <stdint.h>
-#include <stdlib.h>
-#include <conio.h>
-#include <stdio.h>
-#include <tchar.h>
-#include <ctime>
 #include <unordered_map>
-#include <algorithm>
-#include <string>
-#include <unordered_set>
-#include <vector>
-#include <cstdint>
-
 
 using namespace std;
 

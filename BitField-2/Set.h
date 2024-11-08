@@ -1,5 +1,6 @@
 #pragma once
 #include "BitField.h"
+#include <vector>
 
 class Set
 {
