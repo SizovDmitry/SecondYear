@@ -1,0 +1,21 @@
+# ninja log v5
+1	73	7527714685757222	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	88072f976d388bbd
+1	73	7527714685757222	C:/Users/184si/Desktop/SecondYear/BitField-2/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	88072f976d388bbd
+74	6629	7527714751284014	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	8f64eb603b167bd8
+74	6629	7527714751284014	C:/Users/184si/Desktop/SecondYear/BitField-2/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	8f64eb603b167bd8
+6630	6791	0	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	70524ce5b1f116c7
+6630	6791	0	C:/Users/184si/Desktop/SecondYear/BitField-2/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	70524ce5b1f116c7
+6791	6861	7527714753631768	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	e5738b6bec5a3883
+6791	6861	7527714753631768	C:/Users/184si/Desktop/SecondYear/BitField-2/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	e5738b6bec5a3883
+6861	6936	7527714754374226	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	a26fdd0e174ecb04
+6861	6936	7527714754374226	C:/Users/184si/Desktop/SecondYear/BitField-2/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	a26fdd0e174ecb04
+6936	6999	7527714755006320	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	3513b1b521185f93
+6936	6999	7527714755006320	C:/Users/184si/Desktop/SecondYear/BitField-2/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	3513b1b521185f93
+6999	7066	7527714755688566	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	fef19006c78be0d5
+6999	7066	7527714755688566	C:/Users/184si/Desktop/SecondYear/BitField-2/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	fef19006c78be0d5
+7067	7124	7527714756260457	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	b5c35338fb1578df
+7067	7124	7527714756260457	C:/Users/184si/Desktop/SecondYear/BitField-2/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	b5c35338fb1578df
+7124	7233	7527714757253760	CMakeFiles/googletest-populate-complete	d55ed22493ffae98
+7124	7233	7527714757253760	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	d55ed22493ffae98
+7124	7233	7527714757253760	C:/Users/184si/Desktop/SecondYear/BitField-2/out/build/x64-Debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	d55ed22493ffae98
+7124	7233	7527714757253760	C:/Users/184si/Desktop/SecondYear/BitField-2/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	d55ed22493ffae98
