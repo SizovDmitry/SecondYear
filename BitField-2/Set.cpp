@@ -10,7 +10,6 @@ Set::Set(const BitField& bf) : _maxPower(bf.GetLength()), _bitField(bf) {
 
 }
 
-//Set::operator  BitField ()        {  BitField temp(this->_bitField); return temp; } 
 
 size_t Set::GetMaxPower() const {
     return _maxPower;
@@ -60,20 +59,6 @@ Set Set::operator~ () {
     return res;
 }
 
-istream& operator>>(istream& is, Set& tmp) {
-    is >> tmp._maxPower;
-    is >> tmp._bitField;
-    return is;
-}
-
-ostream& operator<<  (ostream& ostr, const Set& s)
-{
-    ostr << "\n{";
-    for (int i = 0; i < s._bitField.GetLength(); i++)
-        if (s._bitField.GetBit(i)) ostr << i << " ";
-    ostr << "}\n";
-    return ostr;
-}
 
 std::vector<uint64_t> Set::GetPrimary() const {
     std::vector<uint64_t> res;
@@ -82,7 +67,7 @@ std::vector<uint64_t> Set::GetPrimary() const {
     res.push_back(1);
     std::vector<bool> is_used(_maxPower + 1, false);
 
-    for (uint64_t i = 2; i <= _maxPower; i++) {
+    for (uint64_t i = 2; i < _maxPower; i++) {
         if (!is_used[i]) {
             res.push_back(i);
             for (uint64_t j = i * 2; j <= _maxPower; j += i) {

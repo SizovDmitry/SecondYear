@@ -30,8 +30,6 @@ public:
     bool operator==(const BitField& tmp) const;
     BitField operator~();
 
-    friend istream& operator>>  (istream& istr, BitField& bf);
-    friend ostream& operator<<  (ostream& ostr, const BitField& bf);
 
     ~BitField() {
 
